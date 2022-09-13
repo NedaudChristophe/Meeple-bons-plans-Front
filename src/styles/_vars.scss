@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+// Colors
+
+$mainBlue: #007682;
+$mainPink: #d53767;
+$secondaryBlue: #CDF7F6;
+$secondaryDarkGrey: #333333;
+$secondaryLightGrey: #C1CFDA;
+$mainPinkAlternate: #da7593;
+
+
+$font: 'Luckiest Guy', sans-serif;
+ 
+
+// Others
+//  Add deal / Login / Search Bar / deal / label discount & price
+ 
+$buttonRadius: 0.5em !default;
+$buttonPadding: 10px !default;
+ 
+code {
+  border-radius:  $buttonRadius;
+}
+
+$buttonRadiusResponsive: 50% !default;
+ 
+code {
+  border-radius:  $buttonRadiusResponsive;
+}
+
+/*largeur, hauteur, marging, padding, delais(animation)*/
+/*font = taille, epaisseur, familly*/
+/*button call_to_action = taille, couleur, radius, */
+/*button secondary = taille, couleur, radius, */
+

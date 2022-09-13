@@ -1,0 +1,77 @@
+@use 'src/styles/vars';
+
+.errormsg {text-align:center;
+  z-index:4;
+margin-top:2em;
+animation: dot-animation 5.02s ease-in-out infinite;
+font-weight: bold;}
+
+.error { 
+  margin-top:2em;
+}
+
+
+
+.cards404 {display:flex;  
+  //position: absolute;
+  flex-direction: row;
+justify-content: center;}
+
+ 
+.card404-1 img {
+  height:100%;
+  margin-right:-7em;
+  z-index:3;
+  animation: dot-animation 8.02s ease-in-out infinite;
+}
+
+.card404-2 img {
+  
+  z-index:1;
+  animation: dot-animation 5.02s ease-in-out infinite;
+}
+.card404-3 img {
+  height:100%;
+  margin-left:-8em;
+  z-index:2;
+  animation: dot-animation 10.02s ease-in-out infinite;
+}
+
+@keyframes dot-animation {
+  0%,
+  100% {
+    transform: translate3d(20px, 0, 0);
+    
+    transform: rotate(0deg) rotate(-0deg);
+  }
+  50% {
+    transform: translate3d(-20px, 0, 0);
+    transform: rotate(20deg) rotate(-10deg);
+  }
+}
+
+.responsive404 {display:none;}
+
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 750px) {
+  .cards404 {
+    display:none;  
+  } 
+
+  .error { padding-top:150px;
+    width:100%;
+    margin-top:0em;   }
+
+  .responsive404  {
+    display:flex; 
+    width:100%;
+    flex-direction: row; 
+    justify-content: center;
+    
+  }
+  .responsive404 img {
+    
+    width:80%;
+  }
+}
+

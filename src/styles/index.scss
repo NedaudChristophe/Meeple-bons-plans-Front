@@ -1,0 +1,192 @@
+@use 'reset';
+@use 'vars';
+
+@import 'https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500&family=Luckiest+Guy&display=swap';
+
+body {
+  font-family: sans-serif;
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/
+
+
+
+/* Pages : Add Deal, Contact, Sign In */
+
+.form-section {
+  display:flex;
+  flex-direction: column;
+  background-color:white;
+  padding:20px;
+  border-radius:vars.$buttonRadius;
+  width:60%;
+  margin:auto;
+  margin-top:2em;
+  margin-bottom:3.5em;
+}
+
+.form-title {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  font-size: 2em;
+  margin-bottom:1em;
+}
+
+.form-span {
+margin-left:0.2em;
+}
+
+.form-input {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+border-radius:0.5em;
+}
+
+.form-input:focus {
+background-color: #ddd;
+  outline: none;
+  box-shadow:inset 0px 0px 2px 1px #00e1fa;
+}
+
+.form-secondarytitle {
+  font-size:0.9em;
+  font-weight: bold;
+  color:vars.$secondaryDarkGrey;
+}
+
+.form-button-validate {
+  border-radius:vars.$buttonRadius;
+  background-color: vars.$mainPink;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 12px 20px;
+  width: 100px;   
+  margin-bottom: 20px;
+  margin:auto;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.form-button-validate:hover {
+  background-color: vars.$mainPinkAlternate;
+}
+
+
+.form-msg-error {
+  // display:none;
+  color:red;
+  margin-bottom:1.5em;
+}
+
+//DEAL TITLE & SUBTITLE
+.mainTitleDeal {
+  margin:0;
+  padding:0;
+  font-weight: bold;
+  font-size:1.1em;
+  margin-right:0.5em;
+  }
+  
+.secondaryTitleDeal {
+  margin-top:0.4em;
+  padding:0;
+  color:#949494;
+  font-weight: bold;
+  font-size:0.7em;
+  }
+
+/*for all textarea */
+  .textarea1 {
+    resize: vertical; /* user can resize vertically, but width is fixed */
+  }
+
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 500px) {
+  .form-section {
+    padding-top:150px;
+    width:100%;
+    margin-top:0em;   
+  } 
+}
+
+.display-none {display:none;}
+
+.popupgen-none {
+  display:none;}
+
+.popupgen {
+  box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.424);
+  position: fixed;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width:500px;
+  // left:35%;
+  // top:15px;
+  z-index:9;
+  background-color:rgba(255, 163, 135, 0.89);
+  color:rgb(0, 0, 0);
+  padding:10px;
+  font-weight: bold;
+  // margin:auto;
+  text-align:center;
+ 
+  border-radius:5px;
+  opacity:100%;
+  animation-name:byepopup;
+  animation-direction: normal;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+
+@keyframes byepopup {
+  from { visibility: visible; opacity:100%; }
+  to   { 
+    visibility:hidden; 
+    opacity:0%; }
+}
+
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 425px) {
+  .popupgen {width:320px;}
+}
+
+
+//DOC FOOTER
+.doc-title {
+  margin-bottom:2em;
+  text-align: center;
+  margin-left:0.5em;
+  font-weight: bold; 
+  font-size:2em;
+}
+
+.doc-secondarytitle {
+  margin-bottom:0.5em;
+  
+  font-weight: bold; 
+  font-size:1.2em;
+}
+
+
+
+.icon {
+  margin-right: 1rem;
+}

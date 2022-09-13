@@ -1,0 +1,72 @@
+@use 'src/styles/vars';
+
+.register-main  {
+  display:flex;
+  flex-direction: column;
+}
+ 
+.button-register-div {
+  text-align: center;  
+}
+
+.SignIn-button {
+  width: 120px;
+}
+/*
+.choice {
+  font-weight:bold;
+
+  &White {
+    background-color: #ebebeb;
+  }
+ 
+  }  
+*/
+
+/*.choice {
+  
+}*/
+
+ 
+
+
+.choice {
+  
+  font-weight: bold;
+  &Black {
+        
+  }
+  &Blue {
+      
+  }
+  &Green {
+    
+  }
+  &Orange {
+    
+     
+  }
+  &Pink {
+    
+     
+  }
+  &Purple {
+    background-color:vars.$secondaryBlue;      
+  }
+  &Red{
+     
+    background-color:#FFF;  
+  }
+  &Turquoise{
+    background-color:vars.$secondaryBlue; 
+  }
+  &White {
+    background-color:#FFF;   
+  }
+  &Yellow{
+    
+    background-color:#FFF;
+  }  
+}
+
+.meeple-text {color:black;}

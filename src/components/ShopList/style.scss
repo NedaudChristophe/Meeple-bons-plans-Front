@@ -1,0 +1,167 @@
+@use 'src/styles/vars';
+
+.pseudo-body{
+  //60
+ width: 60%;
+ max-width: 100%;
+ margin:auto;
+ padding-top:30px;
+}
+
+.shop-card{
+  background-color: white;
+  border-radius:vars.$buttonRadius;
+  padding:20px;
+  max-width: 100%;
+  margin-bottom:0.5em;
+}
+.title-shop{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left:15px;
+}
+
+.shop-card-contener{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.card-shop-left{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.img-shop{
+  padding:20px;
+  border:1px solid rgba(158, 158, 158, 0.322);
+  width:150px;
+  margin-bottom:0.5em;
+}
+
+.button-shop-detail{
+  // width: 70%;
+  margin: 0 0.5rem 0 0.5rem;
+  background-color: vars.$mainBlue;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: vars.$buttonRadius;
+  color: white;
+  padding: 12px 20px;
+
+}
+
+.card-shop-right{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left:1em;
+}
+
+.description-shop{
+  margin: 1rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.contener-store{
+  height: 1.2rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.icone-store{
+  height: 1.2rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+ 
+
+.contener-shop-footer {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//Les grandes ecrans ----------------------------
+//On passe la card en format paysage
+@media screen and (max-width: 1200px) {
+
+  .shop-card-contener{
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .card-shop-left{
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+    }
+
+    .img-shop{
+      margin: 1rem auto 1rem auto;
+      width: 60%;
+      
+    }
+
+    .card-shop-right{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+  
+} 
+
+//Les laptops---------------------------------------
+
+@media screen and (max-width: 780px) {
+
+  .card-shop-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .card-shop-right{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .button-shop-detail{
+      width: 100%;
+      margin: 0 auto 1rem auto;
+      background-color: vars.$mainBlue;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      color: white;
+      margin-top:1em;
+    }
+
+    .contener-shop-footer {
+      display: flex;
+      flex-direction: column ;
+ 
+    }
+} 
+
+//Les tablettes ------------------------------
+
+@media screen and (max-width: 660px) {
+ 
+} 
+
+
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 500px) {
+  .pseudo-body {
+    padding-top:150px;
+    width:100%;
+  } 
+
+  .shop-card{border-radius:0px; }
+}

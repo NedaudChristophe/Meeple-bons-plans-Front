@@ -1,0 +1,662 @@
+/*
+Bleu : #007682
+Rose : #d53767
+Bleu ciel : #CDF7F6
+Noir anthracite : #333333
+Gris : #C1CFDA
+*/
+
+/*! BODY */
+body {
+    margin:0;
+    padding:0;
+    background-color: #C1CFDA;
+    font-family: Verdana,Geneva,sans-serif; 
+}
+
+/*! HEADER */
+header {
+  
+    /*width:100%;*/
+    color : white;
+    
+    background-color: #333333;
+    width:100%;
+    z-index:9;
+    transition:0.5s;
+     
+    
+}
+
+.scrollEffect {
+  opacity:0;
+  transition: all 0.5s;
+}
+
+
+
+/*! PARTIE CENTRALE */
+#head-logo {
+    max-width: 60%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+
+/*! LOGO + TITLE */
+#left-header {
+	display:flex;
+  flex-direction:row;
+  align-items: center;
+  margin-left:10px;
+  
+}
+
+.header__title {
+  letter-spacing:0.2rem;
+  font-family: 'Luckiest Guy', cursive;
+  font-size:1.8em;
+}
+
+.logotype {
+   height:50px;
+   margin-right:5px;
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+  .header__title {display:none; }
+ 
+
+}
+
+/* .logo {
+  color:white;
+  text-decoration: none;
+  font-family: 'Luckiest Guy', cursive;
+  font-size:0.8em;
+  letter-spacing:0.2rem;
+  background-color: rgb(192, 171, 133);
+ ;
+} */
+
+/*! SEARCH + ADD DEAL + LOGIN */
+#right-header {
+  display:flex;
+    flex-direction: row;
+    margin-right:10px;
+  }
+ 
+#add-deal {
+        position: relative;
+        background-color: #d53767;
+        border: none;
+        border-radius:0.5em;
+        font-size: 1em;
+        color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        margin-right:10px;
+      }
+      
+      #add-deal:after {
+        content: "";
+        background: #da7593;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      #add-deal:active:after {
+        padding: 0;    
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+
+      #login{
+        position: relative;
+        background-color: #d53767;
+        border: none;
+        border-radius:0.5em;
+        font-size: 1em;
+        color: #FFFFFF;
+        padding: 10px;
+        
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      #login:after {
+        content: "";
+        background: #da7593;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      #login:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+
+      .search { 
+        position: relative; 
+        margin: 0 auto ;
+        text-align: center;
+      }
+
+      .search-bar {
+        padding: 10px; 
+        border-radius:0.5em;
+        margin-right:10px;
+      }
+
+       /* .fa-search { 
+          color:#333333;
+          position: absolute; 
+          top: 25%;
+         right: 10%;
+  
+        } */
+
+        
+      @media screen and (max-width: 1520px) {
+
+       
+
+        .displaybutton{ display:none; 
+            
+              }
+
+              #add-deal{border-radius:50%;
+                width:40px;
+                height:40px;
+                font-size: 1.2em;
+                
+                 }
+
+              #login{
+                border-radius:50%;
+                width:40px;
+                height:40px;
+                font-size: 1.2em;
+                margin-left:0.5em;
+                     }
+
+      }
+
+    
+/*! NAV BAR */
+
+nav {
+    width:100%;
+    margin: auto;
+    color : #333333;
+    background-color:#CDF7F6;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+}
+  
+a{
+  text-decoration:none;
+  transition:0.5s;
+  }
+
+  /*TOP NAVIGATION*/
+  
+  
+  .topnav {
+    overflow: hidden;
+  width:60%;
+  margin:auto; 
+  transition:0.5s;
+  /*background-size:cover;
+  background-position:center;*/
+  }
+  
+  .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  position:relative;
+  transition:0.5s;
+  color:#333333;
+  font-weight: bold;
+  }
+  .active:hover{
+    color:#fff;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+       
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;    
+        border: none;
+        outline: none;
+        color:#333333;
+        font-weight: bold;
+         padding: 10px 20px; 
+        background-color: inherit;
+        font-family: inherit;
+        transition:0.5s;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 180px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          }
+          
+          .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          margin:auto 0rem;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          }
+
+          .topnav a:hover, .dropdown:hover .dropbtn {
+            color: #d53767
+            }
+
+            .dropdown-content a:hover {
+              background-color: #ddd;
+              color: black;
+              }
+              
+              .dropdown:hover .dropdown-content {
+              display: block;
+              }
+
+              @media screen and (max-width: 780px) {
+             .nav-link {display:none;}
+              }
+ 
+                
+  /*! MAIN */
+ 
+main{
+   
+     
+    width:60%;
+    display:flex;
+    max-width: 80%;
+     margin: auto;
+  
+
+    
+}
+/*! SECTION */
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing:0.1rem;
+}
+
+/*! SECTION 75% width avec ASIDE */
+section {
+     margin-top:5%;
+   /* width:75%;*/
+     
+}
+ 
+
+.deal {
+    background-color:white;
+    border-radius:0.5em;
+    display:flex;
+    flex-direction: row;
+    margin-bottom:1em;
+    
+}
+
+.left-deal {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1em;
+   
+}
+
+.picture-deal {
+  max-width:150px;
+}
+
+.vote {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:0;
+  margin:0;
+  border-radius:10px;
+  border:1px solid rgb(216, 216, 216);
+  width:80%;
+  margin-top:0.5em;
+}
+
+.degree {
+  font-size:1.4em;
+  font-weight: bold;
+  margin:0.5em;
+  color:rgb(255, 123, 0);
+   
+}
+
+.icone-degree {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.flamme {
+  height: 25px;
+}
+
+.icecube {
+  height: 20px; 
+}
+
+.right-deal {
+  margin-left:1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   
+  
+	 
+	 
+}
+
+.header-deal {
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top:0.5em;
+}
+
+h2 {
+  margin:0;
+  padding:0;
+  
+}
+
+h6 {
+  margin:0;
+  padding:0;
+  color:#949494;
+}
+
+.shop {
+  font-weight: lighter;
+}
+
+.deal-label {
+  display:flex;
+  flex-direction: row;
+  
+}
+
+
+.discount {
+  background-color:#C1CFDA;
+  border-radius:0.5em;
+  padding:0.3em;
+  margin-right:0.5em;
+  font-weight: bold;
+}
+
+.price {
+
+  background-color: #d53767;  
+  border-radius:0.5em;
+  padding:0.3em;
+  margin-right:0.5em;
+  color:white;
+  font-weight: bold;
+  
+}
+
+.deal-text {
+  margin-right: 0.5em;
+ 
+}
+
+
+.footer-deal {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+  padding-right:0.5em;
+  margin-bottom:0.5em; 
+  
+
+}
+
+.see-deal {
+  background-color: #007682;
+  color:white;
+  font-weight: bold;
+  border-radius:0.5em;
+  border-style: none;
+  padding:0.8em;
+   
+  margin-bottom:0.5em;
+  
+   
+}
+
+.footer-dealp {
+  margin:0;
+  padding:0;
+   
+ 
+}
+
+
+/*.fb-icon {
+  margin:0;
+  padding:0;
+  font-size:2.5em;
+  color:#3b5998;
+   
+}*/
+
+.footer-deal-time {
+  margin:0;
+  padding:0;
+  font-size:0.7em;
+  color:#949494;
+   
+}
+.clock {
+  font-size:1.2em;
+   
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .picture-deal {
+      width:100px;
+       
+      
+    }
+      
+    .header-deal {
+      display:flex;
+      flex-direction: column;
+    }
+    
+    .deal-label {
+     margin-top:0.5em;
+    }
+
+    .left-deal {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding:1em;
+       
+    }
+
+    .vote {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align:center;
+      padding:0.5em;
+      width:50%;
+      margin-top:0.5em;
+    }
+
+  }
+
+
+
+
+/*deal
+---> left deal
+- picture deal
+- vote
+
+---> right-deal
+- header-deal
+- shop
+- discount
+- price
+
+           
+---> main deal
+
+---> footer deal 
+ -see-deal
+*/
+
+/*! ASIDE */
+
+/* aside {
+  background-color:rgb(54, 129, 129);
+    width:25%;
+    margin-top:5%;
+    margin-left:1em;
+} */
+
+
+
+
+/* Pagination links */
+
+.pagination { 
+  text-align: center;
+  margin-bottom:1em;
+}
+.pagination a {
+    color: black;
+   
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: #007682;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+  /*! FOOTER */
+footer{
+    background:#ccc;
+    bottom:0;
+    position:fixed;
+    height: 2.8em;
+    width:100%;
+    background-color: #333;
+    }
+ 
+        /* Add a black background color to the footer navigation */
+.footnav {
+    
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    
+   
+  }
+  
+  /* Style the links inside the footer  navigation bar */
+  .footnav a {
+    
+    color: #f2f2f2;
+   
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .footnav a:hover {
+    border-bottom: 3px solid #d53767;
+  }
+  
+  .footnav a.active {
+    border-bottom: 3px solid #d53767;
+  }
+
+  .footp {color: #f2f2f2;
+     }
+
+  /*
+Bleu : #007682
+Rose : #d53767
+Bleu ciel : #CDF7F6
+Noir anthracite : #333333
+Gris : #C1CFDA
+
+*/

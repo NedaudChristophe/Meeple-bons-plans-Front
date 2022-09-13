@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label for="deal-title">Titre du bon plan</label>
+            <input type="text" name="deal-title" placeholder="Titre">
+            <label for="deal-search">Rechercher un jeu</label>
+            <input type="text" name="deal-search" placeholder="Saisissez votre recherche">
+            <span>Jeu manquant ?</span>
+            <button>Suggérer un jeu</button>
+        </div>
+        <div>
+            <label for="game-concern">Cochez si le bon plan ne concerne pas un jeu en particulier</label>
+            <input type="checkbox" name="game-concern">
+            <span>Jeu concerné par le bon plan : This War of Mine</span>
+        </div>
+        <div>
+            <label for="deal-description">Description du bon plan</label>
+            <textarea rows="5" cols="33" name="deal-description"
+                placeholder="Indiquez une description du bon plan"></textarea>
+        </div>
+        <div>
+            <label for="deal-link">Lien du bon plan</label>
+            <input type="text" name="deal-link"
+                placeholder="Lien vers le bon plan en ligne (ou le site de la boutique physique si pas bon plan en ligne) ">
+        </div>
+        <div>
+            <label for="deal-discount-price">Prix avec remise</label>
+            <input type="number" name="deal-discount-price">
+            <label for="deal-shipping-price">Montant frais de port</label>
+            <input type="number" name="deal-shipping-price">
+            <label for="deal-vendor">Vendeur</label>
+            <select name="deal-vendor">
+                <option value="">---Choisissez un vendeur---</option>
+                <option value="philibert">Philibert</option>
+                <option value="fnac">La Fnac</option>
+                <option value="cultura">Cultura</option>
+                <option value="donjon-deodatien">Le Donjon déodatien</option>
+                <option value="other">Autre boutique</option>
+            </select>
+        </div>
+        <div>
+            <label for="deal-discount-code">Code de réduction</label>
+            <input type="number" name="deal-discount-code">
+            <label for="deal-end">Date de fin (si connue)</label>
+            <input type="date" name="deal-end">
+        </div>
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+</body>
+
+</html>

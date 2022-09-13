@@ -1,0 +1,36 @@
+footer{
+    background:#ccc;
+    bottom:0;
+    position:fixed;
+    height: 2.8em;
+    width:100%;
+    background-color: #333;
+     
+    }
+ 
+/*  Dark Grey background color to the footer navigation */
+.footnav {    
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+  }
+
+/* Style the links inside the footer navigation bar */
+.footnav {
+      a {
+        color: #f2f2f2;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 12px;
+        border-bottom: 3px solid transparent;
+      }
+      a:hover {
+        border-bottom: 3px solid #d53767;
+      }
+      a.active {
+        border-bottom: 3px solid #d53767;
+      }
+}
+
+  .footp {color: #f2f2f2;
+     }

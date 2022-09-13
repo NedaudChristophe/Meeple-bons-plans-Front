@@ -1,0 +1,149 @@
+@use 'src/styles/vars';
+
+.adddeal-right-element {
+  text-align: center;
+}
+
+.missing-game {
+  font-size:0.9em;
+  color:vars.$mainPink;
+}
+
+.gameornot 
+{ text-align: center;
+  font-size:0.9em;
+  margin:10px;
+}
+
+.adddeal-game { 
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  padding:20px;
+  margin-top:2em;
+  border-radius:vars.$buttonRadius;
+  display:flex;
+  font-weight: bold;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+
+.button-addgame {
+  border-radius:vars.$buttonRadius;
+  background-color: vars.$mainBlue;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 8px;
+  width: 120px;
+  margin:auto;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left:0.5em;
+}
+
+.button-addgame:hover {background-color:#1ab9b9}
+
+.searchgame {
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+	
+}
+
+.button-searchgame {
+  border-radius:vars.$buttonRadius;
+  background-color: vars.$secondaryDarkGrey;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 10px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left:0.5em;
+}
+.button-searchgame:hover {background-color: vars.$secondaryLightGrey;}
+
+.adddeal-info {
+    display:flex;
+    flex-direction:row;
+    font-weight: bold;
+    color:vars.$secondaryDarkGrey;
+} 
+
+.adddeal-info-title {
+  margin-top:1em;
+  margin-right:0.3em;  
+}
+
+.input-info-deal{ 
+  width:75px;
+  margin-right:1.0em;
+}
+
+.button_div {
+  text-align: center;
+}
+
+//POP UP SEARCH GAME  
+
+.results_searchgame {
+  
+  ul{
+  overflow-y:scroll;
+  height:30vh;
+}
+
+li {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  margin-bottom:0.5em;
+  height:100px;
+}
+
+img {
+ width:80px;
+}
+
+span {
+  margin-left:1em;
+  font-size:1em;
+  font-weight: bold;
+  // padding:1.5em;
+}
+
+li:hover{
+  background-color:rgb(238, 238, 238);
+}
+}
+
+
+//POP UP ADD GAME 
+.alertaddgame {
+  font-size:0.9em;
+  text-align: justify;
+  line-height: 150%;
+  margin-bottom:0.8em;
+
+  span {font-weight: bold;}
+  em {font-style: italic;
+    font-weight: bold;
+  color:vars.$mainBlue;}
+}
+
+.warning-icon {
+  color:rgb(228, 0, 0);
+}
+
+
+.btn_validate_deal {
+    display:flex;
+    flex-direction: column;
+
+    span {
+      padding-top:0.5em;
+      color:rgb(228, 0, 0);
+
+}
+}

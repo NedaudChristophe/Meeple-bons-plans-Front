@@ -1,0 +1,299 @@
+
+@use 'src/styles/vars';
+
+.deal {
+  background-color:white;
+  border-radius:0.5em;
+  display:flex;
+  flex-direction: row;
+  margin-bottom:1em; 
+  /*justify-content: space-between;*/
+}
+
+.left-deal {
+display:flex;
+flex-direction: column;
+align-items: center;
+padding:1em;
+}
+
+.picture-deal {
+max-width:150px;
+}
+
+.picture-effect:hover {
+  padding:2px;
+  transition: all 0.3s ease-in-out 0s;
+  filter:blur(0.1em); // saturate(0%)
+}
+ 
+
+.TitleHoverPink:hover {
+  color:vars.$mainPink;
+}
+ 
+
+.vote {
+display:flex;
+flex-direction: row;
+justify-content: center;
+padding:0;
+margin:0;
+border-radius:10px;
+border:1px solid rgb(216, 216, 216);
+width:80%;
+margin-top:0.5em;
+}
+
+.degree {
+font-size:1.4em;
+font-weight: bold;
+margin:0.5em;
+color:rgb(255, 123, 0);
+}
+
+.negativ-temp {
+  color:rgb(31, 170, 212);
+}
+
+
+.icone-degree {
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-self: center;
+}
+
+.flamme {
+height: 25px;
+}
+
+.flamme:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+   /* When the animation is finished, start again */
+   animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.icecube {
+height: 20px; 
+transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.icecube:hover {
+  height: 18px; 
+  transform: rotate(180deg);
+  }
+
+  .btn-vote {
+    border-style : none;
+    background-color:transparent;
+  }
+
+.right-deal {
+  margin-left:1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*align-content: space-between;*/
+  width:100%;
+  
+}
+
+.header-deal {
+display:flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-between;
+margin-top:0.5em;
+}
+
+.shop {
+font-weight: lighter;
+}
+
+.deal-label {
+display:flex;
+flex-direction: row;
+}
+
+.discount {
+background-color:#C1CFDA;
+border-radius:0.5em;
+padding:0.3em;
+margin-right:0.5em;
+font-weight: bold;
+font-size:1.1em;
+}
+
+.price {
+background-color: #d53767;  
+border-radius:0.5em;
+padding:0.3em;
+margin-right:0.5em;
+color:white;
+font-weight: bold;
+font-size:1.1em;
+}
+
+.deal-text {
+margin-right: 0.5em;
+margin-bottom:0.5em;
+margin-top:0.5em;
+}
+
+
+.footer-deal {
+display:flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-items: flex-end;
+align-content: flex-end;
+padding-right:0.5em;
+margin-bottom:0.5em; 
+}
+
+.see-deal {
+background-color: #007682;
+color:white;
+font-weight: bold;
+border-radius:0.5em;
+border-style: none;
+padding:0.8em;
+margin-bottom:0.5em;
+}
+
+.see-deal:hover{background-color: #0093a3;}
+
+.buttonComment {
+background-color:vars.$secondaryDarkGrey;
+margin-right:0.5em;
+}
+.buttonComment:hover{background-color: #5a5a5a;}
+
+.footer-dealp {
+margin:0;
+padding:0;
+}
+
+
+
+/*.fb-icon {
+margin:0;
+padding:0;
+font-size:2.5em;
+color:#3b5998;
+ 
+}*/
+
+.footer-deal-time {
+margin:0;
+padding:0;
+font-size:0.7em;
+color:#949494;
+ 
+}
+.clock {
+font-size:1.2em;
+ 
+}
+
+
+@media screen and (max-width: 900px) {
+  .picture-deal {
+    width:100px;
+  }
+
+  
+    
+  .header-deal {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .deal-label {
+   margin-top:0.5em;
+  
+  }
+
+  .left-deal {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1em;
+    
+     
+  }
+
+  .vote {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+    padding:0.5em;
+    width:50%;
+    margin-top:0.5em;
+  }
+
+  .degree {
+    font-size:1.0em;
+    font-weight: bold;
+    margin:0.4em;
+    color:rgb(255, 123, 0);
+     
+    }
+
+
+
+
+
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 500px) {
+  // body {background-color: red;}
+
+
+  .deal {
+   
+    background-color:white;
+    border-radius:0;
+    display:flex;
+    flex-direction: row;
+    margin-bottom:0.3em;
+  
+  }
+  
+  .right-deal {
+    margin-left:0em;
+    margin-right:0.5em;
+  }
+
+  .left-deal {
+    margin-top:0.5em;
+    margin-right:1em;
+    margin-bottom:1em;
+    
+     
+  }
+
+
+}
+
+
+
+
+}

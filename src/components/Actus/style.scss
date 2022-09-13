@@ -1,0 +1,176 @@
+@use 'src/styles/vars';
+
+.pseudo-body{
+  width: 60%;
+}
+
+.main-contener{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.Title-big {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Img-Actu{
+  display: flex;
+  height: 5rem;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-dig {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: rgb(94, 92, 92);
+}
+
+.description-actu-big{
+  padding: 0.2rem 0 0.5rem 0;
+}
+
+.contener-card-medium {
+  display: flex;
+  width: 40%;
+ 
+}
+
+.card-medium {
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  margin: 0 auto 1rem auto;
+  background-color: white;
+}
+
+.description-actu-Medium{
+  padding: 0.2rem 0 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.menu-page {
+  margin: 2rem auto 0 auto;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-previous {
+  display: flex;
+}
+
+.page-number{
+  display: flex;
+  justify-content: center;
+}
+
+.button-next {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+// Les grands ecrans -------------------------------------------
+
+@media screen and (max-width: 1200px) {
+
+
+  .Title-big {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+}
+//Les laptops ----------------------------------------------------
+
+@media screen and (max-width: 780px) {
+
+
+
+  .menu-page {
+    margin: 2rem auto 0 auto;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//Les tablettes ---------------------------------------------------------
+@media screen and (max-width: 600px) {
+
+  
+
+  .card-main {
+    
+    padding: 0.4rem;
+    width: 95%;
+    margin: 0 auto 1rem auto;
+    background-color: white;
+  }
+
+  .Title-big {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .card-medium {
+     
+    padding: 0.6rem;
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    background-color: white;
+  }
+
+  .menu-page {
+    margin: 2rem auto 0 auto;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Img-Actu{
+    display: flex;
+    height: 3rem;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+//Les portables -------------------------------------------------
+//SMARTPHONE --------------- SMARTPHONE ---------------  // 
+@media screen and (max-width: 500px) {
+ 
+
+  .card-main{border-radius:0px;
+  width:100%; }
+
+  .card-medium {
+     
+    border-radius:0px;
+    width: 100%;
+     
+  }
+
+  .Img-Actu{
+    display: flex;
+    height: 1.5rem;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+
+ 

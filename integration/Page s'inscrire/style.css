@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0 45rem;
+}
+
+.h1-inscription{
+    text-align: center;
+}
+
+.img--user{
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+}
+
+.input--inscription{
+    width: 30rem;
+    height: 2rem;
+    margin: 2rem auto 0 auto ;
+    text-align: center;
+    font-family: var(--Police);
+}
+
+.input--span{
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.input--memory{
+    margin: 3rem 0 0 0 ;
+    font-family: var(--Police);
+}
+
+.button--inscription{
+    width: 30rem;
+    font-size: 2rem;
+    font-family: var(--Police);
+    background-color: var(--Pink-color);
+    color: var(--Blanc);
+}
