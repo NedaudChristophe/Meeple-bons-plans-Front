@@ -20,10 +20,7 @@ Récupérez une copie du modèle :
 git clone git@github.com:O-clock-Curie/React-modele.git
 
 cd React-modele
-# installe de fontawesome
-yarn add @fortawesome/fontawesome-svg-core
-yarn add @fortawesome/free-solid-svg-icons
-yarn add @fortawesome/react-fontawesome
+
 # installe les dépendances du projet
 yarn 
 
@@ -35,19 +32,6 @@ yarn start
 
 Voilà, le modèle tourne, mais en fait ça ne sert pas à grand chose. L'idée est de se _baser sur_ le modèle, mais de le faire tourner dans un autre projet.
 
-Si bug globy
-
-
-
-• sudo npm cache clear -f
-• sudo npm install -g n
-• sudo n stable
-yarn add @fortawesome/fontawesome-svg-core
-yarn add @fortawesome/free-solid-svg-icons
-yarn add @fortawesome/react-fontawesome
-Puis :
-• yarn
-• yarn start
 ---
 
 Comment démarrer un projet avec ce modèle ?
