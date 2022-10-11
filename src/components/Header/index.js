@@ -140,7 +140,7 @@ function Header() {
             <img src={logo} className="logotype" alt="Logo Meeple Bons Plans" />
           </Link>
           <Link to="/">
-            <div className="header__title">MEEPLE BONS PLANS</div>
+            <h1 className="header__title">MEEPLE BONS PLANS</h1>
           </Link>
         </div>
         <div id="right-header">

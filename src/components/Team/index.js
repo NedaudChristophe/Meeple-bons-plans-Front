@@ -37,7 +37,7 @@ function Team() {
           <div className="card-div">
             <section className="card">
               <div className="card__side card__side--front">
-                <img src={laurent} alt="profil team" id="card-ava" />               
+                <img src={laurent} alt="profil team" id="card-ava" />
                 <p>Laurent</p>
               </div>
 

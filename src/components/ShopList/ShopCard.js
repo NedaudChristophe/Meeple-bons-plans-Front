@@ -9,10 +9,10 @@ import { faStore, faGlobe, faUpRightFromSquare} from "@fortawesome/free-solid-sv
 // == Composant
 function ShopCard({
     name,
+    description,
     adress,
     image,
     url,
-    description,
 }) {
   return (
     <div className="shop-card">
@@ -22,8 +22,7 @@ function ShopCard({
           </div>
           <div className="card-shop-right">
             <div className="title-shop">{name}</div>
-            <p className="description-shop">
-            {description}
+            <p className="description-shop">{description}
             </p>
             <div className="contener-shop-footer">
               <div className="contener-store">

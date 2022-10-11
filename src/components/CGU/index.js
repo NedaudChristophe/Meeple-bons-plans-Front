@@ -38,10 +38,10 @@ function CGU() {
 
       <div className="doc-secondarytitle">LIMITATION DE RESPONSABILITÉ</div>
       <p>MEEPLE BONS PLANS ou l'un de ses créateurs sera tenu responsable de tout problème découlant de ce site. Néanmoins MEEPLE BONS PLANS et ses créateurs ne seront pas tenus responsables de tout problème découlant de toute utilisation irrégulière de ce site.
-       
+
       </p>
       <br />
-  
+
 
     </div>
   );

@@ -10,9 +10,9 @@ function Footer() {
     <footer>
       <div className="footnav">
         {/* <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/contact">Contact</NavLink> */}
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/cgu">CGU</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/mentions-legales">Mentions légales</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'active' : ''} to="/team">L'équipe</NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/cgu">CGU</NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/mentions-legales">Mentions légales</NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/team">L'équipe</NavLink>
       </div>
     </footer>
   );

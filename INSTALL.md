@@ -32,6 +32,19 @@ yarn start
 
 Voilà, le modèle tourne, mais en fait ça ne sert pas à grand chose. L'idée est de se _baser sur_ le modèle, mais de le faire tourner dans un autre projet.
 
+Si bug globy
+
+
+
+• sudo npm cache clear -f
+• sudo npm install -g n
+• sudo n stable
+yarn add @fortawesome/fontawesome-svg-core
+yarn add @fortawesome/free-solid-svg-icons
+yarn add @fortawesome/react-fontawesome
+Puis :
+• yarn
+• yarn start
 ---
 
 Comment démarrer un projet avec ce modèle ?
