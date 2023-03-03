@@ -41,7 +41,7 @@ const dealMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     // RECUPERATION DE LA LISTE DE TOUS LES DEALS DEPUIS L'API AU CHARGMEENT INITIAL DU SITE
     case FETCH_DEAL: {
-      axios.get('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals')
+      axios.get('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals')
         .then((response) => {
           console.log('Response API récupération de tous les deals', response.data);
           // On envoie le resultat de la requête au reducer qui sera chargé de l'ecriture
@@ -54,7 +54,7 @@ const dealMiddleware = (store) => (next) => (action) => {
     }
     case NEW_GAME: {
       const { newGame, urlGame } =state.deal.addDealForm;
-      axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/new/game',
+      axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/new/game',
       {
         name: newGame,
         url: urlGame,
@@ -86,7 +86,7 @@ const dealMiddleware = (store) => (next) => (action) => {
       const gameToSearch = action.searchedGame;
       axios
         .post(
-          "http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/games/byname", {
+          "https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/games/byname", {
             name: gameToSearch,
           },)
         .then((response) => {
@@ -101,7 +101,7 @@ const dealMiddleware = (store) => (next) => (action) => {
     case FETCH_ONE_DEAL: {
       axios
         .get(
-          `http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals/${action.dealId}`,
+          `https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals/${action.dealId}`,
           
         )
         .then((response) => {
@@ -122,7 +122,7 @@ const dealMiddleware = (store) => (next) => (action) => {
     //Reception des boutiques
     case FETCH_SHOPS: {
       axios
-        .get('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/shops')
+        .get('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/shops')
         .then((response) => {
           // Ici on recup bien les données de notre API (les recettes)
           // On veut maintenant les rajouter dans le state
@@ -140,7 +140,7 @@ const dealMiddleware = (store) => (next) => (action) => {
     //Reception des actus
     case FETCH_NEWS: {
       axios
-        .get('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/articles')
+        .get('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/articles')
         .then((response) => {
 
           console.log('coucou');
@@ -181,7 +181,7 @@ const dealMiddleware = (store) => (next) => (action) => {
       //on doit récupérer l'id de l'utilisateur connecté 
       axios
         .post(
-          'http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals', {
+          'https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals', {
             title: dealTitle,
             description: dealDescription,
             url: dealURL,
@@ -228,7 +228,7 @@ const dealMiddleware = (store) => (next) => (action) => {
       console.log('comment: ', userComment);
       
       //
-      axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/comments', {
+      axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/comments', {
         comment: userComment,
         deal: id,
         user: parseIntUserId,
@@ -255,7 +255,7 @@ const dealMiddleware = (store) => (next) => (action) => {
     // chercher un jeu depuis la barre de recherche
     /*case SEARCH_GAME_HEADER: {
       axios
-        .get("http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals", {
+        .get("https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals", {
         }, {
           headers: {
             Authorization: `bearer ${token}`,
