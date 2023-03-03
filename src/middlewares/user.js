@@ -38,13 +38,13 @@ const userMiddleware = (store) => (next) => (action) => {
       
       //const { user: {email, password}} = store.FETCH_FORM_SINGIN();
       // const api = axios.create({
-      // baseURL: 'http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals',
+      // baseURL: 'https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals',
       // });
       //On utilise un token fourni par le back pour s'autentifier sur l'api
       // const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTk0NTE4MDIsImV4cCI6MTY1OTUxNjYwMiwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluQGFkbWluLmNvbSJ9.GdZiaM9Hgt-vDvOfW3pnw1Um5dX58-QZn2Ft7F_7kGgkbOVQMUNPQMWpCT13vbzbx2eu_cbTdXU_2pUGWdSxxu76X79XZZx29wVTX3BOEJOtyIASuNxYscyL4wGxcr4ppA0q3oFEzrmj_6k7JA9ImBzI5TEE4dcOk5ooaYRlCZj2ND-S8IPsWwdGE3R-sik3xuJ4gkQjvBsahAXG_pyxpXavZ2_Q3IBbykU-0saFtMs2cPoTPe_gmODm0EFjBjpAdd_zzLE1dQFt9s4R5Kcx-G6s63gPM-gETx5iV4ET_PMEGHCM461eUzlXewrwY2ntsG6IHOnTkUQycAD-o9ZeUg';
       // api.defaults.headers.common.Authorization = `bearer ${token}`;
-      //axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/users',
-      axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/users',
+      //axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/users',
+      axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/users',
       
         {name: createPseudo,
         email: createMail,
@@ -83,7 +83,7 @@ const userMiddleware = (store) => (next) => (action) => {
       console.log('passage dans middleware user pour le vote');    
       console.log('vote',action.value,'userId',currentUserId,'deal',action.dealId)  
       
-      axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/reviews',
+      axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/reviews',
       
         {vote: action.value,
         user: currentUserId,
@@ -121,13 +121,13 @@ const userMiddleware = (store) => (next) => (action) => {
       
       //const { user: {email, password}} = store.FETCH_FORM_SINGIN();
       // const api = axios.create({
-      // baseURL: 'http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/deals',
+      // baseURL: 'https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/deals',
       // });
       //On utilise un token fourni par le back pour s'autentifier sur l'api
       
       // api.defaults.headers.common.Authorization = `bearer ${token}`;
-      //axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/login_check',
-      axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/login_check',
+      //axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/login_check',
+      axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/login_check',
         {
           username: email,
           password: password,
@@ -166,9 +166,9 @@ const userMiddleware = (store) => (next) => (action) => {
       console.log('passage dans middleware user');     
       
       
-      //axios.post('http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/users/custom',
+      //axios.post('https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/users/custom',
       axios.post(
-        'http://nedaudchristophe-server.eddi.cloud/meeple/current/public/api/users/custom',
+        'https://nedaudchristophe-server.cloud.eddi.xyz/meeple/current/public/api/users/custom',
         {email: currentUserEmail
         ,},
         {headers: {
